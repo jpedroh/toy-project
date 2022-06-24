@@ -35,7 +35,7 @@ public class Pessoa
     }
 
     public boolean isMaiorIdade() {
-        final Instant eighteenYearsAgo = Instant.now().minus(18, ChronoUnit.YEARS);
+        final Instant eighteenYearsAgo = Instant.now().minus(16, ChronoUnit.YEARS);
         
         return this.dataNascimento.isAfter(eighteenYearsAgo);
     }
